@@ -5,7 +5,7 @@ _G.Key = "bloodhub"
 _G.KeyInput = "string"
 
 function MakeScriptHub()
-    loadstring(game:HttpGet(""))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yBloodz/TPS-script/main/Tps%20ult%20finale"))()
 end
 
 local Tab = Window:MakeTab({
