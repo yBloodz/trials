@@ -1,1 +1,49 @@
-do local a=[[77fuscator 0.4.9 - discord.gg/CEHsVcBcuf]];return(function(b,c,d,e,f,g,h)local i=310;local j=616;local k=9;local l=398;local m=854;local n=7;local o=31;local p=46537;local q=404;local r=43730;local s=1232;local t=989;local u=598;local v=638;local w=319;local x=550;local y=34620;local z=9046;local ba=275;local bb=36;local bc=511;local bd=341;local be=11;local bf=32847;local bg=3;local bh=33480;local bi=4;local bj=256;local bk=2;local bl=5;local bm=1;local bn,bo,bp,bq,br=string.sub,table.concat,string.char,tonumber,next;local bs=0;local bt;bt=function(bu)local bv,bw,bx,by,bz,ca,cb,cc,cc;local cc=bs local cd=6;while true do cc=cc+bm if(cc<bl or cc==bl)then if(cc<bk or cc==bk)then if not(cc~=bm)then bv,bw,bx=h,h,{}else by=bj end else if(cc==bi or cc>bi)then if(cc<bl)then for bj=bs,by-bm do local ce=bs while true do ce=ce+bm if(ce>bm)then break else bz[bj]=bp(bj);end end end;else ca=bm end else bz={}end end else if(cc>k or cc==k)then if(cc==k or cc<k)then while((ca<#bu)and not(#a~=d))do local a;local d=bs while true do d=d+bm if(d>bg or d==bg)then if(d<bg or d==bg)then bz[by]=(bv..bn(bw,bm,bm));else if not(d~=bi)then bx[#bx+bm],bv,by=bw,bw,(by+bm);else break end end else if not(d~=bm)then a=cb()else if bz[a]then local d=bs while true do d=(d+bm)if(d<bk)then bw=bz[a];else break end end else local a=bs while true do a=a+bm if(a<bk)then bw=(bv..bn(bv,bm,bm));else break end end end;end end end end;else if not(cc~=be)then break else return bo(bx);end end else if(cc<cd or cc==cd)then cb=function()local a=bq(bn(bu,ca,ca),bb);ca=(ca+bm);local d=bq(bn(bu,ca,((ca+a)-bm)),bb);ca=ca+a;return d;end else if cc>n then bx[bm]=bv;else bv=bp(cb());end end end end end end local a=bt(b);local b,d,bb,be,bj,bj,bn,bo,bp,bq,br,bt,bu,bv,bw,bw,bx,by,by,bz,ca,ca,cb,cb,cb,cc,cc,cc=string.byte,string.char,string.sub,table.concat,(math.ldexp or(function(b,d)return b*((bk^d));end)),(getfenv or function()return _ENV end),setmetatable,select,next,math.floor,string.format,unpack,tonumber,table.insert,string.gmatch,tostring,type,_VERSION,pcall,string.match,string.find,((debug.
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "yBloodz TPS Ultimate soccer", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+_G.Key = "bloodhub"
+_G.KeyInput = "string"
+
+function MakeScriptHub()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yBloodz/TPS-script/main/Tps%20ultimate%20soccer"))()
+end
+
+local Tab = Window:MakeTab({
+	Name = "Key",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("Information","The key changes everyday, so make sure to get key everyday.")
+
+Tab:AddTextbox({
+	Name = "Enter key",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		_G.KeyInput = Value
+	end	  
+})
+
+Tab:AddButton({
+	Name = "Check key",
+	Callback = function()
+      		if _G.KeyInput == _G.Key then
+                  MakeScriptHub()
+              else
+                  wait(0.1)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Incorrect Key"; -- the title 
+Text = "Click on Get Key and paste it in any browser to get the key!"; -- what the text says 
+Duration = 10; -- how long the notification should in secounds
+})
+              end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Get Key",
+	Callback = function()
+      		setclipboard("https://link-target.net/531202/tps-ultimate-soccer-key")
+  	end    
+})
