@@ -1,7 +1,7 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "yBloodz TPS Ultimate soccer", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
-_G.Key = "bloodhub"
+_G.Key = "tps444"
 _G.KeyInput = "string"
 
 function MakeScriptHub()
