@@ -42,7 +42,7 @@ Duration = 10; -- how long the notification should in secounds
 })
 
 Tab:AddButton({
-	Name = "Get Key",
+	Name = "Get Key (paste in any browser)",
 	Callback = function()
       		setclipboard("https://link-target.net/531202/tps-ultimate-soccer-key")
   	end    
