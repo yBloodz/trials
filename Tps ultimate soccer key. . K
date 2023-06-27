@@ -14,7 +14,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("Information","The key changes everyday, so make sure to get key everyday.")
+Tab:AddParagraph("Information","The key changes after some days, so make sure to get key if you get incorrect key.")
 
 Tab:AddTextbox({
 	Name = "Enter key",
